@@ -176,9 +176,9 @@
         }
       }
     },
-    "api-interfaces": {
-      "root": "libs/api-interfaces",
-      "sourceRoot": "libs/api-interfaces/src",
+    "backend-user-ui-api-rest": {
+      "root": "libs/backend/user/ui/api/rest",
+      "sourceRoot": "libs/backend/user/ui/api/rest/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -186,17 +186,101 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/api-interfaces/tsconfig.lib.json",
-              "libs/api-interfaces/tsconfig.spec.json"
+              "libs/backend/user/ui/api/rest/tsconfig.lib.json",
+              "libs/backend/user/ui/api/rest/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/backend/user/ui/api/rest/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/api-interfaces/jest.config.js",
-            "tsConfig": "libs/api-interfaces/tsconfig.spec.json"
+            "jestConfig": "libs/backend/user/ui/api/rest/jest.config.js",
+            "tsConfig": "libs/backend/user/ui/api/rest/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "backend-user-core-application": {
+      "root": "libs/backend/user/core/application",
+      "sourceRoot": "libs/backend/user/core/application/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/user/core/application/tsconfig.lib.json",
+              "libs/backend/user/core/application/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/backend/user/core/application/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/backend/user/core/application/jest.config.js",
+            "tsConfig": "libs/backend/user/core/application/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "backend-user-core-domain": {
+      "root": "libs/backend/user/core/domain",
+      "sourceRoot": "libs/backend/user/core/domain/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/user/core/domain/tsconfig.lib.json",
+              "libs/backend/user/core/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/backend/user/core/domain/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/backend/user/core/domain/jest.config.js",
+            "tsConfig": "libs/backend/user/core/domain/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "backend-user-shell": {
+      "root": "libs/backend/user/shell",
+      "sourceRoot": "libs/backend/user/shell/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/user/shell/tsconfig.lib.json",
+              "libs/backend/user/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/backend/user/shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/backend/user/shell/jest.config.js",
+            "tsConfig": "libs/backend/user/shell/tsconfig.spec.json"
           }
         }
       }

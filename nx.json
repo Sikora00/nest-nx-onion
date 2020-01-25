@@ -12,17 +12,26 @@
   },
   "projects": {
     "onion": {
-      "tags": []
+      "tags": ["platform:web", "type:application"]
     },
     "onion-e2e": {
       "tags": [],
       "implicitDependencies": ["onion"]
     },
     "api": {
-      "tags": []
+      "tags": ["platform:server", "type:application"]
     },
-    "api-interfaces": {
-      "tags": []
+    "backend-user-ui-api-rest": {
+      "tags": ["platform:server", "scope:user", "type:ui"]
+    },
+    "backend-user-core-application": {
+      "tags": ["platform:server", "scope:user", "type:application-services"]
+    },
+    "backend-user-core-domain": {
+      "tags": ["platform:server", "scope:user", "type:domain"]
+    },
+    "backend-user-shell": {
+      "tags": ["platform:server", "scope:user", "type:shell"]
     }
   }
 }

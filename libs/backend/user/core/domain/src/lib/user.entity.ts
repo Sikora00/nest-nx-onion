@@ -3,6 +3,6 @@ export class User {
   name: string;
   constructor() {
     User.i++;
-    this.name = 'User' + User.i
+    this.name = 'User' + User.i;
   }
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@onion-first/api-interfaces';
+import { Component, OnInit } from '@angular/core';
 import { ListUsersQuery } from './core/list-users.query';
 
 @Component({

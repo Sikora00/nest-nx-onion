@@ -10,7 +10,7 @@ import { ApiUserRepository } from './infrastructure/api-user.repository';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, HttpClientModule, CoreModule],
-  providers: [{provide: Repository, useClass: ApiUserRepository}],
+  providers: [{ provide: Repository, useClass: ApiUserRepository }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

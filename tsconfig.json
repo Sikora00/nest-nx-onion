@@ -16,7 +16,19 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@onion-first/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@onion-first/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@onion-first/backend/user/ui/api/rest": [
+        "libs/backend/user/ui/api/rest/src/index.ts"
+      ],
+      "@onion-first/backend/user/core/application": [
+        "libs/backend/user/core/application/src/index.ts"
+      ],
+      "@onion-first/backend/user/core/domain": [
+        "libs/backend/user/core/domain/src/index.ts"
+      ],
+      "@onion-first/backend/user/shell": [
+        "libs/backend/user/shell/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

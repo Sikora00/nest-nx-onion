@@ -6,6 +6,4 @@ import { LocalUserRepository } from './local-user.repository';
 @NgModule({
   providers: [ApiUserRepository, HttpClientModule, LocalUserRepository]
 })
-export class InfrastructureModule {
-
-}
+export class InfrastructureModule {}

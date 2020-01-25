@@ -1,5 +1,5 @@
 import { User } from './user.entity';
 
-export abstract class Repository {
+export abstract class UserRepository {
   abstract findAll(): User[];
 }

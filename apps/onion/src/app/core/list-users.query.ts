@@ -3,13 +3,12 @@ import { Repository } from './repository.interface';
 
 @Injectable()
 export class ListUsersQuery {
-  constructor(private repository: Repository) {
-  }
+  constructor(private repository: Repository) {}
 
   execute() {
     return this.repository.findAll();
   }
 }
-// export const listUsersQuery = (repository: Repository) => {
+// export const listUsersQuery = (repository: UserRepository) => {
 //   return repository.findAll();
 // }
