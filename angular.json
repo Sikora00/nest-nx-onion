@@ -284,6 +284,34 @@
           }
         }
       }
+    },
+    "backend-user-infrastructure": {
+      "root": "libs/backend/user/infrastructure",
+      "sourceRoot": "libs/backend/user/infrastructure/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/user/infrastructure/tsconfig.lib.json",
+              "libs/backend/user/infrastructure/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/backend/user/infrastructure/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/backend/user/infrastructure/jest.config.js",
+            "tsConfig": "libs/backend/user/infrastructure/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

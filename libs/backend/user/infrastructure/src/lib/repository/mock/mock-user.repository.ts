@@ -1,5 +1,4 @@
-import { UserRepository } from '../user-repository.interface';
-import { User } from '../user.entity';
+import { User, UserRepository } from '@onion-first/backend/user/core/domain';
 
 export class MockUserRepository implements UserRepository {
   findAll(): User[] {

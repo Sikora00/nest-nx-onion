@@ -32,6 +32,9 @@
     },
     "backend-user-shell": {
       "tags": ["platform:server", "scope:user", "type:shell"]
+    },
+    "backend-user-infrastructure": {
+      "tags": ["platform:server", "scope:user", "type:infrastructure"]
     }
   }
 }

@@ -28,6 +28,9 @@
       ],
       "@onion-first/backend/user/shell": [
         "libs/backend/user/shell/src/index.ts"
+      ],
+      "@onion-first/backend/user/infrastructure": [
+        "libs/backend/user/infrastructure/src/index.ts"
       ]
     }
   },

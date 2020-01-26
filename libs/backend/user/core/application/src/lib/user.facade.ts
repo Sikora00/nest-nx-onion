@@ -1,9 +1,7 @@
-import { Injectable } from '@nestjs/common';
-import { QueryBus } from '@nestjs/cqrs';
 import { User } from '@onion-first/backend/user/core/domain';
 import { ListUsersQuery } from './list-users/list-users.query';
+import { QueryBus } from './ports/query-bus.interface';
 
-@Injectable()
 export class UserFacade {
   constructor(private queryBus: QueryBus) {}
 
