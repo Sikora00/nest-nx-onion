@@ -32,7 +32,7 @@
     "no-debugger": true,
     "no-duplicate-super": true,
     "no-empty": false,
-    "no-empty-interface": true,
+    "no-empty-interface": false,
     "no-eval": true,
     "no-inferrable-types": [true, "ignore-params"],
     "no-misused-new": true,
@@ -60,12 +60,28 @@
             "onlyDependOnLibsWithTags": ["type:shell"]
           },
           {
+            "sourceTag": "type:application-services",
+            "onlyDependOnLibsWithTags": ["type:domain"]
+          },
+          {
             "sourceTag": "type:domain",
             "onlyDependOnLibsWithTags": []
           },
           {
-            "sourceTag": "type:application-services",
-            "onlyDependOnLibsWithTags": ["type:domain"]
+            "sourceTag": "type:infrastructure",
+            "onlyDependOnLibsWithTags": [
+              "type:domain",
+              "type:application-services"
+            ]
+          },
+          {
+            "sourceTag": "type:shell",
+            "onlyDependOnLibsWithTags": [
+              "type:domain",
+              "type:application-services",
+              "type:ui",
+              "type:infrastructure"
+            ]
           },
           {
             "sourceTag": "type:ui",
