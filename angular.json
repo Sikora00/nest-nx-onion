@@ -151,12 +151,45 @@
             }
           }
         },
+        "build-cli": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/api/cli",
+            "main": "apps/api/src/cli.ts",
+            "tsConfig": "apps/api/tsconfig.app.json",
+            "assets": ["apps/api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/api/src/environments/environment.ts",
+                  "with": "apps/api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
         "serve": {
           "builder": "@nrwl/node:execute",
           "options": {
             "buildTarget": "api:build"
           }
         },
+        "serve-cli": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/api/cli",
+            "main": "apps/api/src/cli.ts",
+            "watch": true,
+            "tsConfig": "apps/api/tsconfig.app.json",
+            "assets": ["apps/api/src/assets"]
+          }
+        }
+        ,
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -309,6 +342,31 @@
           "options": {
             "jestConfig": "libs/backend/user/infrastructure/jest.config.js",
             "tsConfig": "libs/backend/user/infrastructure/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "backend-user-ui-cli": {
+      "root": "libs/backend/user/ui/cli",
+      "sourceRoot": "libs/backend/user/ui/cli/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/backend/user/ui/cli/tsconfig.lib.json",
+              "libs/backend/user/ui/cli/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/backend/user/ui/cli/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/backend/user/ui/cli/jest.config.js",
+            "tsConfig": "libs/backend/user/ui/cli/tsconfig.spec.json"
           }
         }
       }

@@ -57,7 +57,7 @@
         "depConstraints": [
           {
             "sourceTag": "type:application",
-            "onlyDependOnLibsWithTags": ["type:shell"]
+            "onlyDependOnLibsWithTags": ["type:ui"]
           },
           {
             "sourceTag": "type:application-services",
@@ -87,7 +87,8 @@
             "sourceTag": "type:ui",
             "onlyDependOnLibsWithTags": [
               "type:domain",
-              "type:application-services"
+              "type:application-services",
+              "type:shell"
             ]
           }
         ]

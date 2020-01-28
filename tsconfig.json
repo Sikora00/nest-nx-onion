@@ -31,6 +31,9 @@
       ],
       "@onion-first/backend/user/infrastructure": [
         "libs/backend/user/infrastructure/src/index.ts"
+      ],
+      "@onion-first/backend/user/ui/cli": [
+        "libs/backend/user/ui/cli/src/index.ts"
       ]
     }
   },

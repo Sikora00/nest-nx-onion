@@ -1,5 +1,5 @@
 import { User } from '@onion-first/backend/user/core/domain';
-import { ListUsersQuery } from './list-users/list-users.query';
+import { ListUsersQuery } from './queries/list-users/list-users.query';
 import { QueryBus } from './ports/query-bus.interface';
 
 export class UserFacade {

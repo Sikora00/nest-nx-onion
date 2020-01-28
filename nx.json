@@ -35,6 +35,9 @@
     },
     "backend-user-infrastructure": {
       "tags": ["platform:server", "scope:user", "type:infrastructure"]
+    },
+    "backend-user-ui-cli": {
+      "tags": ["platform:server", "scope:user", "type:ui"]
     }
   }
 }
