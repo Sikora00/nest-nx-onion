@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
+import { CreateUserCommand, UserFacade } from '@onion-first/backend/user/core/application';
 import { Command, Positional } from 'nestjs-command';
 
 @Injectable()
-export class CreateUserCommand {
+export class CreateUserCliCommand {
+  constructor(private userFacade: UserFacade) {}
+
   @Command({
     command: 'user:create <name>',
     describe: 'create a user',
@@ -12,6 +15,7 @@ export class CreateUserCommand {
     @Positional({ name: 'name', describe: 'The user name', type: 'string' })
     name: string
   ) {
-    console.log('created user ', name);
+    await this.userFacade.create(new CreateUserCommand(name));
+    console.table(await this.userFacade.listUsers())
   }
 }
