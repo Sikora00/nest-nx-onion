@@ -16,24 +16,24 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@onion-first/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@onion-first/backend/user/ui/api/rest": [
-        "libs/backend/user/ui/api/rest/src/index.ts"
+      "@todo-app/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@todo-app/server/user/ui/api/rest": [
+        "libs/server/user/ui/api/rest/src/index.ts"
       ],
-      "@onion-first/backend/user/core/application": [
-        "libs/backend/user/core/application/src/index.ts"
+      "@todo-app/server/user/core/application": [
+        "libs/server/user/core/application/src/index.ts"
       ],
-      "@onion-first/backend/user/core/domain": [
-        "libs/backend/user/core/domain/src/index.ts"
+      "@todo-app/server/user/core/domain": [
+        "libs/server/user/core/domain/src/index.ts"
       ],
-      "@onion-first/backend/user/shell": [
-        "libs/backend/user/shell/src/index.ts"
+      "@todo-app/server/user/shell": [
+        "libs/server/user/shell/src/index.ts"
       ],
-      "@onion-first/backend/user/infrastructure": [
-        "libs/backend/user/infrastructure/src/index.ts"
+      "@todo-app/server/user/infrastructure": [
+        "libs/server/user/infrastructure/src/index.ts"
       ],
-      "@onion-first/backend/user/ui/cli": [
-        "libs/backend/user/ui/cli/src/index.ts"
+      "@todo-app/server/user/ui/cli": [
+        "libs/server/user/ui/cli/src/index.ts"
       ]
     }
   },

@@ -1,5 +1,5 @@
 {
-  "npmScope": "onion-first",
+  "npmScope": "todo-app",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": {
@@ -11,33 +11,65 @@
     "nx.json": "*"
   },
   "projects": {
-    "onion": {
-      "tags": ["platform:web", "type:application"]
-    },
-    "onion-e2e": {
-      "tags": [],
-      "implicitDependencies": ["onion"]
-    },
     "api": {
-      "tags": ["platform:server", "type:application"]
+      "tags": [
+        "platform:server",
+        "type:application"
+      ]
     },
-    "backend-user-ui-api-rest": {
-      "tags": ["platform:server", "scope:user", "type:ui"]
+    "server-user-ui-api-rest": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
     },
-    "backend-user-core-application": {
-      "tags": ["platform:server", "scope:user", "type:application-services"]
+    "server-user-core-application": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:application-services"
+      ]
     },
-    "backend-user-core-domain": {
-      "tags": ["platform:server", "scope:user", "type:domain"]
+    "server-user-core-domain": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:domain"
+      ]
     },
-    "backend-user-shell": {
-      "tags": ["platform:server", "scope:user", "type:shell"]
+    "server-user-shell": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:shell"
+      ]
     },
-    "backend-user-infrastructure": {
-      "tags": ["platform:server", "scope:user", "type:infrastructure"]
+    "server-user-infrastructure": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:infrastructure"
+      ]
     },
-    "backend-user-ui-cli": {
-      "tags": ["platform:server", "scope:user", "type:ui"]
+    "server-user-ui-cli": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
+    },
+    "todo-app": {
+      "tags": [
+        "platform:web",
+        "type:application"
+      ]
+    },
+    "todo-app-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "onion"
+      ]
     }
   }
 }

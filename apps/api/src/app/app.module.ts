@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { BackendUserUiApiRestModule } from '@onion-first/backend/user/ui/api/rest';
+import { ServerUserUiApiRestModule } from '@todo-app/server/user/ui/api/rest';
 
 @Module({
-  imports: [BackendUserUiApiRestModule]
+  imports: [ServerUserUiApiRestModule]
 })
 export class AppModule {}
