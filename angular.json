@@ -14,7 +14,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -43,7 +45,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**"
+            ]
           }
         },
         "test": {
@@ -152,7 +157,10 @@
               "libs/server/user/shell/tsconfig.lib.json",
               "libs/server/user/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/server/user/shell/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/shell/**"
+            ]
           }
         },
         "test": {
@@ -205,7 +213,10 @@
               "libs/server/user/ui/cli/tsconfig.lib.json",
               "libs/server/user/ui/cli/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/server/user/ui/cli/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/ui/cli/**"
+            ]
           }
         },
         "test": {
@@ -241,7 +252,9 @@
               "apps/todo-app/src/favicon.ico",
               "apps/todo-app/src/assets"
             ],
-            "styles": ["apps/todo-app/src/styles.scss"],
+            "styles": [
+              "apps/todo-app/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -301,7 +314,10 @@
               "apps/todo-app/tsconfig.app.json",
               "apps/todo-app/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/todo-app/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/todo-app/**"
+            ]
           }
         },
         "test": {
@@ -335,117 +351,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/todo-app-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/todo-app-e2e/**"]
-          }
-        }
-      }
-    },
-    "server-to-do-core-domain": {
-      "root": "libs/server/to-do/core/domain",
-      "sourceRoot": "libs/server/to-do/core/domain/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
             "tsConfig": [
-              "libs/server/to-do/core/domain/tsconfig.lib.json",
-              "libs/server/to-do/core/domain/tsconfig.spec.json"
+              "apps/todo-app-e2e/tsconfig.e2e.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/server/to-do/core/domain/**"
+              "!apps/todo-app-e2e/**"
             ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/to-do/core/domain/jest.config.js",
-            "tsConfig": "libs/server/to-do/core/domain/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-to-do-core-application": {
-      "root": "libs/server/to-do/core/application",
-      "sourceRoot": "libs/server/to-do/core/application/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/to-do/core/application/tsconfig.lib.json",
-              "libs/server/to-do/core/application/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/to-do/core/application/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/to-do/core/application/jest.config.js",
-            "tsConfig": "libs/server/to-do/core/application/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-to-do-ui-api-rest": {
-      "root": "libs/server/to-do/ui/api/rest",
-      "sourceRoot": "libs/server/to-do/ui/api/rest/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/to-do/ui/api/rest/tsconfig.lib.json",
-              "libs/server/to-do/ui/api/rest/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/to-do/ui/api/rest/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/to-do/ui/api/rest/jest.config.js",
-            "tsConfig": "libs/server/to-do/ui/api/rest/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-to-do-shell": {
-      "root": "libs/server/to-do/shell",
-      "sourceRoot": "libs/server/to-do/shell/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/to-do/shell/tsconfig.lib.json",
-              "libs/server/to-do/shell/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/server/to-do/shell/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/to-do/shell/jest.config.js",
-            "tsConfig": "libs/server/to-do/shell/tsconfig.spec.json"
           }
         }
       }
@@ -463,7 +375,10 @@
               "libs/shared/util-array/tsconfig.lib.json",
               "libs/shared/util-array/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/util-array/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/util-array/**"
+            ]
           }
         },
         "test": {
@@ -471,34 +386,6 @@
           "options": {
             "jestConfig": "libs/shared/util-array/jest.config.js",
             "tsConfig": "libs/shared/util-array/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-to-do-infrastructure": {
-      "root": "libs/server/to-do/infrastructure",
-      "sourceRoot": "libs/server/to-do/infrastructure/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/to-do/infrastructure/tsconfig.lib.json",
-              "libs/server/to-do/infrastructure/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/to-do/infrastructure/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/to-do/infrastructure/jest.config.js",
-            "tsConfig": "libs/server/to-do/infrastructure/tsconfig.spec.json"
           }
         }
       }
@@ -540,8 +427,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["libs/server/shared/port/tsconfig.lib.json"],
-            "exclude": ["**/node_modules/**", "!libs/server/shared/port/**"]
+            "tsConfig": [
+              "libs/server/shared/port/tsconfig.lib.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/shared/port/**"
+            ]
           }
         }
       }
@@ -559,7 +451,9 @@
             "outputPath": "dist/apps/cli",
             "main": "apps/cli/src/main.ts",
             "tsConfig": "apps/cli/tsconfig.app.json",
-            "assets": ["apps/cli/src/assets"]
+            "assets": [
+              "apps/cli/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -582,7 +476,9 @@
             "main": "apps/cli/src/main.ts",
             "watch": true,
             "tsConfig": "apps/cli/tsconfig.app.json",
-            "assets": ["apps/cli/src/assets"]
+            "assets": [
+              "apps/cli/src/assets"
+            ]
           }
         },
         "lint": {
@@ -592,7 +488,10 @@
               "apps/cli/tsconfig.app.json",
               "apps/cli/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/cli/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/cli/**"
+            ]
           }
         },
         "test": {
@@ -617,7 +516,10 @@
               "libs/shared/util-uuid/tsconfig.lib.json",
               "libs/shared/util-uuid/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/util-uuid/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/util-uuid/**"
+            ]
           }
         },
         "test": {
@@ -625,6 +527,146 @@
           "options": {
             "jestConfig": "libs/shared/util-uuid/jest.config.js",
             "tsConfig": "libs/shared/util-uuid/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-core-application": {
+      "root": "libs/server/eisenhower-matrix/core/application",
+      "sourceRoot": "libs/server/eisenhower-matrix/core/application/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/core/application/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/core/application/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/core/application/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/core/application/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/core/application/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-core-domain": {
+      "root": "libs/server/eisenhower-matrix/core/domain",
+      "sourceRoot": "libs/server/eisenhower-matrix/core/domain/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/core/domain/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/core/domain/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/core/domain/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/core/domain/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/core/domain/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-infrastrucutre": {
+      "root": "libs/server/eisenhower-matrix/infrastrucutre",
+      "sourceRoot": "libs/server/eisenhower-matrix/infrastrucutre/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/infrastrucutre/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/infrastrucutre/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-shell": {
+      "root": "libs/server/eisenhower-matrix/shell",
+      "sourceRoot": "libs/server/eisenhower-matrix/shell/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/shell/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/shell/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/shell/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/shell/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-ui-api-rest": {
+      "root": "libs/server/eisenhower-matrix/ui/api/rest",
+      "sourceRoot": "libs/server/eisenhower-matrix/ui/api/rest/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/ui/api/rest/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/ui/api/rest/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.spec.json"
           }
         }
       }

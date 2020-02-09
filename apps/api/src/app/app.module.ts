@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { ServerToDoUiApiRestModule } from '@todo-app/server/to-do/ui/api/rest';
+import { ServerEisenhowerMatrixUiApiRestModule } from '@todo-app/server/eisenhower-matrix/ui/api/rest';
 import { ServerUserUiApiRestModule } from '@todo-app/server/user/ui/api/rest';
 
 @Module({
-  imports: [ServerUserUiApiRestModule, ServerToDoUiApiRestModule]
+  imports: [ServerUserUiApiRestModule, ServerEisenhowerMatrixUiApiRestModule]
 })
 export class AppModule {}

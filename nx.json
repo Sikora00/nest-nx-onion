@@ -12,62 +12,133 @@
   },
   "projects": {
     "api": {
-      "tags": ["platform:server", "type:application"]
+      "tags": [
+        "platform:server",
+        "type:application"
+      ]
     },
     "server-user-ui-api-rest": {
-      "tags": ["platform:server", "scope:user", "type:ui"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
     },
     "server-user-core-application": {
-      "tags": ["platform:server", "scope:user", "type:application-services"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:application-services"
+      ]
     },
     "server-user-core-domain": {
-      "tags": ["platform:server", "scope:user", "type:domain"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:domain"
+      ]
     },
     "server-user-shell": {
-      "tags": ["platform:server", "scope:user", "type:shell"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:shell"
+      ]
     },
     "server-user-infrastructure": {
-      "tags": ["platform:server", "scope:user", "type:infrastructure"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:infrastructure"
+      ]
     },
     "server-user-ui-cli": {
-      "tags": ["platform:server", "scope:user", "type:ui"]
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
     },
     "todo-app": {
-      "tags": ["platform:web", "type:application"]
+      "tags": [
+        "platform:web",
+        "type:application"
+      ]
     },
     "todo-app-e2e": {
       "tags": [],
-      "implicitDependencies": ["todo-app"]
-    },
-    "server-to-do-core-domain": {
-      "tags": ["platform:server", "scope:to-do", "type:domain"]
-    },
-    "server-to-do-core-application": {
-      "tags": ["platform:server", "scope:to-do", "type:application-services"]
-    },
-    "server-to-do-ui-api-rest": {
-      "tags": ["platform:server", "scope:to-do", "type:ui"]
-    },
-    "server-to-do-shell": {
-      "tags": ["platform:server", "scope:to-do", "type:shell"]
+      "implicitDependencies": [
+        "todo-app"
+      ]
     },
     "shared-util-array": {
-      "tags": ["platform:any", "scope:shared", "type:util"]
-    },
-    "server-to-do-infrastructure": {
-      "tags": ["platform:server", "scope:to-do", "type:infrastructure"]
+      "tags": [
+        "platform:any",
+        "scope:shared",
+        "type:util"
+      ]
     },
     "server-shared-infrastructure": {
-      "tags": ["platform:server", "scope:shared", "type:infrastructure"]
+      "tags": [
+        "platform:server",
+        "scope:shared",
+        "type:infrastructure"
+      ]
     },
     "server-shared-port": {
-      "tags": ["platform:server", "scope:shared", "type:port"]
+      "tags": [
+        "platform:server",
+        "scope:shared",
+        "type:port"
+      ]
     },
     "cli": {
-      "tags": ["platform:server", "type:application"]
+      "tags": [
+        "platform:server",
+        "type:application"
+      ]
     },
     "shared-util-uuid": {
-      "tags": ["platform:any", "scope:shared", "type:util"]
+      "tags": [
+        "platform:any",
+        "scope:shared",
+        "type:util"
+      ]
+    },
+    "server-eisenhower-matrix-core-application": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:application-services"
+      ]
+    },
+    "server-eisenhower-matrix-core-domain": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:domain"
+      ]
+    },
+    "server-eisenhower-matrix-infrastrucutre": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:infrastructure"
+      ]
+    },
+    "server-eisenhower-matrix-shell": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:shell"
+      ]
+    },
+    "server-eisenhower-matrix-ui-api-rest": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:ui"
+      ]
     }
   }
 }

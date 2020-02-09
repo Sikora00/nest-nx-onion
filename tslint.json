@@ -60,8 +60,8 @@
             "onlyDependOnLibsWithTags": ["platform:server", "platform:any"]
           },
           {
-            "sourceTag": "scope:to-do",
-            "onlyDependOnLibsWithTags": ["scope:to-do", "scope:shared"]
+            "sourceTag": "scope:eisenhower-matrix",
+            "onlyDependOnLibsWithTags": ["scope:eisenhower-matrix", "scope:shared"]
           },
           {
             "sourceTag": "scope:user",
