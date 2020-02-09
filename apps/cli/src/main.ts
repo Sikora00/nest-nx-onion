@@ -1,10 +1,10 @@
-import { CommandModule, CommandService } from 'nestjs-command';
 import { NestFactory } from '@nestjs/core';
-import { ServerUserUiCliModule } from '@todo-app/server/user/ui/cli';
+import { CommandModule, CommandService } from 'nestjs-command';
+import { AppModule } from './app/app.module';
 
 (async () => {
   const app = await NestFactory.createApplicationContext(
-    ServerUserUiCliModule,
+    AppModule,
     {
       logger: false // no logger
     }
