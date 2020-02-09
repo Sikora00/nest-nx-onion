@@ -1,4 +1,4 @@
-import { User } from './user.entity';
+import { User } from './user.aggregate';
 
 export abstract class UserRepository {
   abstract findAll(): Promise<User[]>;

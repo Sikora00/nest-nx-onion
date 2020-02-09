@@ -77,14 +77,15 @@
           },
           {
             "sourceTag": "type:domain",
-            "onlyDependOnLibsWithTags": []
+            "onlyDependOnLibsWithTags": ["type:util"]
           },
           {
             "sourceTag": "type:infrastructure",
             "onlyDependOnLibsWithTags": [
               "type:domain",
               "type:application-services",
-              "type:port"
+              "type:port",
+              "type:util"
             ]
           },
           {

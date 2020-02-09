@@ -65,6 +65,9 @@
     },
     "cli": {
       "tags": ["platform:server", "type:application"]
+    },
+    "shared-util-uuid": {
+      "tags": ["platform:any", "scope:shared", "type:util"]
     }
   }
 }

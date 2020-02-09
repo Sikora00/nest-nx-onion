@@ -603,6 +603,31 @@
           }
         }
       }
+    },
+    "shared-util-uuid": {
+      "root": "libs/shared/util-uuid",
+      "sourceRoot": "libs/shared/util-uuid/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/util-uuid/tsconfig.lib.json",
+              "libs/shared/util-uuid/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/util-uuid/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/util-uuid/jest.config.js",
+            "tsConfig": "libs/shared/util-uuid/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

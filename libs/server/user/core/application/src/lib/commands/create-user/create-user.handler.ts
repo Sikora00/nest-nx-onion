@@ -6,8 +6,7 @@ export class CreateUserHandler implements ICommandHandler<CreateUserCommand> {
   constructor(protected repository: UserRepository) {}
 
   execute(command: CreateUserCommand): Promise<any> {
-    const user = new User();
-    user.name = command.name;
+    const user = new User(command.name);
     return this.repository.save(user);
   }
 }

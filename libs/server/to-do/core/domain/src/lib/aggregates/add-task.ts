@@ -1,3 +1,4 @@
+import { uuid } from '@todo-app/shared/util-uuid';
 import { CreateTaskWriteModel } from './create-task.write-model';
 import { ToDo } from './to-do.aggregate';
 
@@ -11,7 +12,7 @@ export function addTask(
     title: createTaskWriteModel.title,
     important: createTaskWriteModel.important,
     urgent: createTaskWriteModel.urgent,
-    id: createTaskWriteModel.id
+    id: uuid()
   };
 
   if (task.important) {

@@ -15,7 +15,6 @@ export class AddTaskHandler implements ICommandHandler<AddTaskCommand> {
       title: command.title,
       important: command.important,
       urgent: command.urgent,
-      id: 'test'
     };
     return this.toDoRepository.save(await addTask(toDo, createTaskWriteModel));
   }

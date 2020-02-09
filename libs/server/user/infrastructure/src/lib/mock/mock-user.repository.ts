@@ -1,7 +1,7 @@
 import { User, UserRepository } from '@todo-app/server/user/core/domain';
 
 export class MockUserRepository implements UserRepository {
-  private userCollection = [new User()];
+  private userCollection = [new User('Test')];
   findAll(): Promise<User[]> {
     return Promise.resolve(this.userCollection);
   }
