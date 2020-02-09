@@ -3,12 +3,9 @@ import { CommandModule, CommandService } from 'nestjs-command';
 import { AppModule } from './app/app.module';
 
 (async () => {
-  const app = await NestFactory.createApplicationContext(
-    AppModule,
-    {
-      logger: false // no logger
-    }
-  );
+  const app = await NestFactory.createApplicationContext(AppModule, {
+    logger: false // no logger
+  });
   app
     .select(CommandModule)
     .get(CommandService)

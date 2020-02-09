@@ -1,8 +1,10 @@
+import { uuid } from '@todo-app/shared/util-uuid';
+
 export class User {
-  static i = 0;
+  id: string;
   name: string;
   constructor() {
-    User.i++;
-    this.name = 'User' + User.i;
+    this.id = uuid();
+    this.name = 'User ' + this.id;
   }
 }
