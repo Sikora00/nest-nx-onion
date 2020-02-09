@@ -4,10 +4,7 @@ import { DomainRootModule } from './domain/domain-root.module';
 
 @Global()
 @Module({
-  imports: [
-    ApplicationRootModule,
-    DomainRootModule
-  ],
+  imports: [ApplicationRootModule, DomainRootModule],
   exports: [ApplicationRootModule, DomainRootModule]
 })
 export class ServerUserShellModule {}

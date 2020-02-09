@@ -1,6 +1,6 @@
 import { Module, OnModuleInit } from '@nestjs/common';
 import { CommandBus as NestCommandBus } from '@nestjs/cqrs';
-import { CommandBus } from '@todo-app/server/user/core/application';
+import { CommandBus } from '@todo-app/server/shared/port';
 import { CreateUserHandlerImpl } from './handlers/create-user.handler-impl';
 
 const commandHandlers = [CreateUserHandlerImpl];

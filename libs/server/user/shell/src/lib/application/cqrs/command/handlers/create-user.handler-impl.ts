@@ -1,5 +1,8 @@
 import { CommandHandler } from '@nestjs/cqrs';
-import { CreateUserCommand, CreateUserHandler } from '@todo-app/server/user/core/application';
+import {
+  CreateUserCommand,
+  CreateUserHandler
+} from '@todo-app/server/user/core/application';
 import { UserRepository } from '@todo-app/server/user/core/domain';
 
 @CommandHandler(CreateUserCommand)

@@ -56,12 +56,24 @@
         "allow": [],
         "depConstraints": [
           {
+            "sourceTag": "platform:server",
+            "onlyDependOnLibsWithTags": ["platform:server", "platform:any"]
+          },
+          {
+            "sourceTag": "scope:to-do",
+            "onlyDependOnLibsWithTags": ["scope:to-do", "scope:shared"]
+          },
+          {
+            "sourceTag": "scope:user",
+            "onlyDependOnLibsWithTags": ["scope:user", "scope:shared"]
+          },
+          {
             "sourceTag": "type:application",
             "onlyDependOnLibsWithTags": ["type:ui"]
           },
           {
             "sourceTag": "type:application-services",
-            "onlyDependOnLibsWithTags": ["type:domain"]
+            "onlyDependOnLibsWithTags": ["type:domain", "type:port"]
           },
           {
             "sourceTag": "type:domain",
@@ -71,7 +83,8 @@
             "sourceTag": "type:infrastructure",
             "onlyDependOnLibsWithTags": [
               "type:domain",
-              "type:application-services"
+              "type:application-services",
+              "type:port"
             ]
           },
           {
@@ -79,8 +92,8 @@
             "onlyDependOnLibsWithTags": [
               "type:domain",
               "type:application-services",
-              "type:ui",
-              "type:infrastructure"
+              "type:infrastructure",
+              "type:port"
             ]
           },
           {

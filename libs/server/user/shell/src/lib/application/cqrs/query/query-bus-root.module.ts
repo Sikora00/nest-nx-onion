@@ -1,6 +1,6 @@
 import { Module, OnModuleInit } from '@nestjs/common';
 import { QueryBus as NestQueryBus } from '@nestjs/cqrs';
-import { QueryBus } from '@todo-app/server/user/core/application';
+import { QueryBus } from '@todo-app/server/shared/port';
 import { ListUsersHandlerImp } from './handlers/list-users.handler-impl';
 
 const queryHandlers = [ListUsersHandlerImp];

@@ -10,13 +10,20 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@todo-app/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@todo-app/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
       "@todo-app/server/user/ui/api/rest": [
         "libs/server/user/ui/api/rest/src/index.ts"
       ],
@@ -34,8 +41,35 @@
       ],
       "@todo-app/server/user/ui/cli": [
         "libs/server/user/ui/cli/src/index.ts"
+      ],
+      "@todo-app/server/to-do/core/domain": [
+        "libs/server/to-do/core/domain/src/index.ts"
+      ],
+      "@todo-app/server/to-do/core/application": [
+        "libs/server/to-do/core/application/src/index.ts"
+      ],
+      "@todo-app/server/to-do/ui/api/rest": [
+        "libs/server/to-do/ui/api/rest/src/index.ts"
+      ],
+      "@todo-app/server/to-do/shell": [
+        "libs/server/to-do/shell/src/index.ts"
+      ],
+      "@todo-app/shared/util-array": [
+        "libs/shared/util-array/src/index.ts"
+      ],
+      "@todo-app/server/to-do/infrastructure": [
+        "libs/server/to-do/infrastructure/src/index.ts"
+      ],
+      "@todo-app/server/shared/infrastructure": [
+        "libs/server/shared/infrastructure/src/index.ts"
+      ],
+      "@todo-app/server/shared/port": [
+        "libs/server/shared/port/src/index.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

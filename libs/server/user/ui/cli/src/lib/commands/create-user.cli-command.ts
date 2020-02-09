@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import { CreateUserCommand, UserFacade } from '@todo-app/server/user/core/application';
+import {
+  CreateUserCommand,
+  UserFacade
+} from '@todo-app/server/user/core/application';
 import { Command, Positional } from 'nestjs-command';
 
 @Injectable()
@@ -16,6 +19,6 @@ export class CreateUserCliCommand {
     name: string
   ) {
     await this.userFacade.create(new CreateUserCommand(name));
-    console.table(await this.userFacade.listUsers())
+    console.table(await this.userFacade.listUsers());
   }
 }

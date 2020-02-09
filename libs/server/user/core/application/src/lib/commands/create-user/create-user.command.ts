@@ -1,4 +1,3 @@
 export class CreateUserCommand {
-  constructor(public name: string) {
-  }
+  constructor(public name: string) {}
 }

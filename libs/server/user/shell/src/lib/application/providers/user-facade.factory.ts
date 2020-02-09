@@ -1,8 +1,5 @@
-import {
-  QueryBus,
-  UserFacade
-} from '@todo-app/server/user/core/application';
-import { CommandBus } from '@todo-app/server/user/core/application';
+import { UserFacade } from '@todo-app/server/user/core/application';
+import { CommandBus, QueryBus } from '@todo-app/server/shared/port';
 
 export const userFacadeFactory = (commandBus: CommandBus, queryBus: QueryBus) =>
   new UserFacade(commandBus, queryBus);

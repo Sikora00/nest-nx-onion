@@ -7,6 +7,6 @@ export class MockUserRepository implements UserRepository {
   }
 
   async save(user: User): Promise<void> {
-    this.userCollection.push(user)
+    this.userCollection.push(user);
   }
 }

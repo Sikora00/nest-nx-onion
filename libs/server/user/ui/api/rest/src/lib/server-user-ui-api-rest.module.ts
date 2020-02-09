@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ServerUserShellModule } from '@todo-app/server/user/shell';
-import { AppController } from './app.controller';
+import { UserController } from './user.controller';
 
 @Module({
   imports: [ServerUserShellModule],
-  controllers: [AppController]
+  controllers: [UserController]
 })
 export class ServerUserUiApiRestModule {}
