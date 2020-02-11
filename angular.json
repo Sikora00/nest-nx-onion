@@ -60,62 +60,6 @@
         }
       }
     },
-    "server-user-ui-api-rest": {
-      "root": "libs/server/user/ui/api/rest",
-      "sourceRoot": "libs/server/user/ui/api/rest/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/user/ui/api/rest/tsconfig.lib.json",
-              "libs/server/user/ui/api/rest/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/user/ui/api/rest/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/user/ui/api/rest/jest.config.js",
-            "tsConfig": "libs/server/user/ui/api/rest/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-user-core-application": {
-      "root": "libs/server/user/core/application",
-      "sourceRoot": "libs/server/user/core/application/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/user/core/application/tsconfig.lib.json",
-              "libs/server/user/core/application/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/user/core/application/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/user/core/application/jest.config.js",
-            "tsConfig": "libs/server/user/core/application/tsconfig.spec.json"
-          }
-        }
-      }
-    },
     "server-user-core-domain": {
       "root": "libs/server/user/core/domain",
       "sourceRoot": "libs/server/user/core/domain/src",
@@ -196,34 +140,6 @@
           "options": {
             "jestConfig": "libs/server/user/infrastructure/jest.config.js",
             "tsConfig": "libs/server/user/infrastructure/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-user-ui-cli": {
-      "root": "libs/server/user/ui/cli",
-      "sourceRoot": "libs/server/user/ui/cli/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/user/ui/cli/tsconfig.lib.json",
-              "libs/server/user/ui/cli/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/user/ui/cli/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/user/ui/cli/jest.config.js",
-            "tsConfig": "libs/server/user/ui/cli/tsconfig.spec.json"
           }
         }
       }
@@ -531,34 +447,6 @@
         }
       }
     },
-    "server-eisenhower-matrix-core-application": {
-      "root": "libs/server/eisenhower-matrix/core/application",
-      "sourceRoot": "libs/server/eisenhower-matrix/core/application/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/eisenhower-matrix/core/application/tsconfig.lib.json",
-              "libs/server/eisenhower-matrix/core/application/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/eisenhower-matrix/core/application/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/eisenhower-matrix/core/application/jest.config.js",
-            "tsConfig": "libs/server/eisenhower-matrix/core/application/tsconfig.spec.json"
-          }
-        }
-      }
-    },
     "server-eisenhower-matrix-core-domain": {
       "root": "libs/server/eisenhower-matrix/core/domain",
       "sourceRoot": "libs/server/eisenhower-matrix/core/domain/src",
@@ -583,34 +471,6 @@
           "options": {
             "jestConfig": "libs/server/eisenhower-matrix/core/domain/jest.config.js",
             "tsConfig": "libs/server/eisenhower-matrix/core/domain/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "server-eisenhower-matrix-infrastrucutre": {
-      "root": "libs/server/eisenhower-matrix/infrastrucutre",
-      "sourceRoot": "libs/server/eisenhower-matrix/infrastrucutre/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.lib.json",
-              "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/server/eisenhower-matrix/infrastrucutre/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/server/eisenhower-matrix/infrastrucutre/jest.config.js",
-            "tsConfig": "libs/server/eisenhower-matrix/infrastrucutre/tsconfig.spec.json"
           }
         }
       }
@@ -643,9 +503,9 @@
         }
       }
     },
-    "server-eisenhower-matrix-ui-api-rest": {
-      "root": "libs/server/eisenhower-matrix/ui/api/rest",
-      "sourceRoot": "libs/server/eisenhower-matrix/ui/api/rest/src",
+    "server-user-ui-rest": {
+      "root": "libs/server/user/ui-rest",
+      "sourceRoot": "libs/server/user/ui-rest/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -653,20 +513,216 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.lib.json",
-              "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.spec.json"
+              "libs/server/user/ui-rest/tsconfig.lib.json",
+              "libs/server/user/ui-rest/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/server/eisenhower-matrix/ui/api/rest/**"
+              "!libs/server/user/ui-rest/**"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/server/eisenhower-matrix/ui/api/rest/jest.config.js",
-            "tsConfig": "libs/server/eisenhower-matrix/ui/api/rest/tsconfig.spec.json"
+            "jestConfig": "libs/server/user/ui-rest/jest.config.js",
+            "tsConfig": "libs/server/user/ui-rest/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-user-ui-cli": {
+      "root": "libs/server/user/ui-cli",
+      "sourceRoot": "libs/server/user/ui-cli/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/user/ui-cli/tsconfig.lib.json",
+              "libs/server/user/ui-cli/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/ui-cli/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/user/ui-cli/jest.config.js",
+            "tsConfig": "libs/server/user/ui-cli/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-ui-rest": {
+      "root": "libs/server/eisenhower-matrix/ui-rest",
+      "sourceRoot": "libs/server/eisenhower-matrix/ui-rest/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/ui-rest/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/ui-rest/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/ui-rest/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/ui-rest/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/ui-rest/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-user-core-domain-services": {
+      "root": "libs/server/user/core/domain-services",
+      "sourceRoot": "libs/server/user/core/domain-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/user/core/domain-services/tsconfig.lib.json",
+              "libs/server/user/core/domain-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/core/domain-services/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/user/core/domain-services/jest.config.js",
+            "tsConfig": "libs/server/user/core/domain-services/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-core-domain-services": {
+      "root": "libs/server/eisenhower-matrix/core/domain-services",
+      "sourceRoot": "libs/server/eisenhower-matrix/core/domain-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/core/domain-services/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/core/domain-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/core/domain-services/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/core/domain-services/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/core/domain-services/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-user-core-application-services": {
+      "root": "libs/server/user/core/application-services",
+      "sourceRoot": "libs/server/user/core/application-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/user/core/application-services/tsconfig.lib.json",
+              "libs/server/user/core/application-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/user/core/application-services/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/user/core/application-services/jest.config.js",
+            "tsConfig": "libs/server/user/core/application-services/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-core-application-services": {
+      "root": "libs/server/eisenhower-matrix/core/application-services",
+      "sourceRoot": "libs/server/eisenhower-matrix/core/application-services/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/core/application-services/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/core/application-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/core/application-services/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/core/application-services/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/core/application-services/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "server-eisenhower-matrix-infrastructure": {
+      "root": "libs/server/eisenhower-matrix/infrastructure",
+      "sourceRoot": "libs/server/eisenhower-matrix/infrastructure/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/server/eisenhower-matrix/infrastructure/tsconfig.lib.json",
+              "libs/server/eisenhower-matrix/infrastructure/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/server/eisenhower-matrix/infrastructure/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/server/eisenhower-matrix/infrastructure/jest.config.js",
+            "tsConfig": "libs/server/eisenhower-matrix/infrastructure/tsconfig.spec.json"
           }
         }
       }

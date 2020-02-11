@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { EisenhowerMatrixFacade } from '@todo-app/server/eisenhower-matrix/core/application';
+import { EisenhowerMatrixFacade } from '@todo-app/server/eisenhower-matrix/core/application-services';
 import { CommandBusRootModule } from './cqrs/command/command-bus-root.module';
 import { eisenhowerMatrixFacadeFactory } from './providers/eisenhower-matrix-facade.factory';
 import { QueryBusRootModule } from './cqrs/query/query-bus-root.module';

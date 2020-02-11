@@ -5,5 +5,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../../../../coverage/libs/server/eisenhower-matrix/core/domain'
+  coverageDirectory:
+    '../../../../../coverage/libs/server/eisenhower-matrix/core/domain'
 };

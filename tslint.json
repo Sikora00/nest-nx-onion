@@ -61,19 +61,34 @@
           },
           {
             "sourceTag": "scope:eisenhower-matrix",
-            "onlyDependOnLibsWithTags": ["scope:eisenhower-matrix", "scope:shared"]
+            "onlyDependOnLibsWithTags": [
+              "scope:eisenhower-matrix",
+              "scope:shared"
+            ]
           },
           {
             "sourceTag": "scope:user",
             "onlyDependOnLibsWithTags": ["scope:user", "scope:shared"]
           },
           {
+            "sourceTag": "type:core",
+            "onlyDependOnLibsWithTags": ["type:port"]
+          },
+          {
             "sourceTag": "type:application",
-            "onlyDependOnLibsWithTags": ["type:ui"]
+            "onlyDependOnLibsWithTags": ["type:ui", "type:core"]
           },
           {
             "sourceTag": "type:application-services",
-            "onlyDependOnLibsWithTags": ["type:domain", "type:port"]
+            "onlyDependOnLibsWithTags": [
+              "type:domain",
+              "type:port",
+              "type:util"
+            ]
+          },
+          {
+            "sourceTag": "type:domain-services",
+            "onlyDependOnLibsWithTags": ["type:domain", "type:util"]
           },
           {
             "sourceTag": "type:domain",

@@ -17,20 +17,6 @@
         "type:application"
       ]
     },
-    "server-user-ui-api-rest": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:ui"
-      ]
-    },
-    "server-user-core-application": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:application-services"
-      ]
-    },
     "server-user-core-domain": {
       "tags": [
         "platform:server",
@@ -50,13 +36,6 @@
         "platform:server",
         "scope:user",
         "type:infrastructure"
-      ]
-    },
-    "server-user-ui-cli": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:ui"
       ]
     },
     "todo-app": {
@@ -105,25 +84,11 @@
         "type:util"
       ]
     },
-    "server-eisenhower-matrix-core-application": {
-      "tags": [
-        "platform:server",
-        "scope:eisenhower-matrix",
-        "type:application-services"
-      ]
-    },
     "server-eisenhower-matrix-core-domain": {
       "tags": [
         "platform:server",
         "scope:eisenhower-matrix",
         "type:domain"
-      ]
-    },
-    "server-eisenhower-matrix-infrastrucutre": {
-      "tags": [
-        "platform:server",
-        "scope:eisenhower-matrix",
-        "type:infrastructure"
       ]
     },
     "server-eisenhower-matrix-shell": {
@@ -133,11 +98,60 @@
         "type:shell"
       ]
     },
-    "server-eisenhower-matrix-ui-api-rest": {
+    "server-user-ui-rest": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
+    },
+    "server-user-ui-cli": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:ui"
+      ]
+    },
+    "server-eisenhower-matrix-ui-rest": {
       "tags": [
         "platform:server",
         "scope:eisenhower-matrix",
         "type:ui"
+      ]
+    },
+    "server-user-core-domain-services": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:domain-services"
+      ]
+    },
+    "server-eisenhower-matrix-core-domain-services": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:domain-services"
+      ]
+    },
+    "server-user-core-application-services": {
+      "tags": [
+        "platform:server",
+        "scope:user",
+        "type:application-services"
+      ]
+    },
+    "server-eisenhower-matrix-core-application-services": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:application-services"
+      ]
+    },
+    "server-eisenhower-matrix-infrastructure": {
+      "tags": [
+        "platform:server",
+        "scope:eisenhower-matrix",
+        "type:infrastructure"
       ]
     }
   }

@@ -2,7 +2,7 @@ import { QueryHandler } from '@nestjs/cqrs';
 import {
   GetUserEisenhowerMatrixHandler,
   GetUserEisenhowerMatrixQuery
-} from '@todo-app/server/eisenhower-matrix/core/application';
+} from '@todo-app/server/eisenhower-matrix/core/application-services';
 import { JsonFilePersistenceAdapter } from '@todo-app/server/shared/infrastructure';
 
 @QueryHandler(GetUserEisenhowerMatrixQuery)

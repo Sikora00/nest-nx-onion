@@ -24,12 +24,6 @@
       "@todo-app/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
-      "@todo-app/server/user/ui/api/rest": [
-        "libs/server/user/ui/api/rest/src/index.ts"
-      ],
-      "@todo-app/server/user/core/application": [
-        "libs/server/user/core/application/src/index.ts"
-      ],
       "@todo-app/server/user/core/domain": [
         "libs/server/user/core/domain/src/index.ts"
       ],
@@ -38,9 +32,6 @@
       ],
       "@todo-app/server/user/infrastructure": [
         "libs/server/user/infrastructure/src/index.ts"
-      ],
-      "@todo-app/server/user/ui/cli": [
-        "libs/server/user/ui/cli/src/index.ts"
       ],
       "@todo-app/shared/util-array": [
         "libs/shared/util-array/src/index.ts"
@@ -54,20 +45,35 @@
       "@todo-app/shared/util-uuid": [
         "libs/shared/util-uuid/src/index.ts"
       ],
-      "@todo-app/server/eisenhower-matrix/core/application": [
-        "libs/server/eisenhower-matrix/core/application/src/index.ts"
-      ],
       "@todo-app/server/eisenhower-matrix/core/domain": [
         "libs/server/eisenhower-matrix/core/domain/src/index.ts"
-      ],
-      "@todo-app/server/eisenhower-matrix/infrastrucutre": [
-        "libs/server/eisenhower-matrix/infrastrucutre/src/index.ts"
       ],
       "@todo-app/server/eisenhower-matrix/shell": [
         "libs/server/eisenhower-matrix/shell/src/index.ts"
       ],
-      "@todo-app/server/eisenhower-matrix/ui/api/rest": [
-        "libs/server/eisenhower-matrix/ui/api/rest/src/index.ts"
+      "@todo-app/server/user/ui-rest": [
+        "libs/server/user/ui-rest/src/index.ts"
+      ],
+      "@todo-app/server/user/ui-cli": [
+        "libs/server/user/ui-cli/src/index.ts"
+      ],
+      "@todo-app/server/eisenhower-matrix/ui-rest": [
+        "libs/server/eisenhower-matrix/ui-rest/src/index.ts"
+      ],
+      "@todo-app/server/user/core/domain-services": [
+        "libs/server/user/core/domain-services/src/index.ts"
+      ],
+      "@todo-app/server/eisenhower-matrix/core/domain-services": [
+        "libs/server/eisenhower-matrix/core/domain-services/src/index.ts"
+      ],
+      "@todo-app/server/user/core/application-services": [
+        "libs/server/user/core/application-services/src/index.ts"
+      ],
+      "@todo-app/server/eisenhower-matrix/core/application-services": [
+        "libs/server/eisenhower-matrix/core/application-services/src/index.ts"
+      ],
+      "@todo-app/server/eisenhower-matrix/infrastructure": [
+        "libs/server/eisenhower-matrix/infrastructure/src/index.ts"
       ]
     }
   },
