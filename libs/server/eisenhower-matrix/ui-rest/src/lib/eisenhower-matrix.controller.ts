@@ -12,7 +12,9 @@ export class EisenhowerMatrixController {
   constructor(private facade: EisenhowerMatrixFacade) {}
 
   @Get(':userId')
-  getUserMatrix(@Param('userId') userId: string): Promise<GetUserQueryReadModel> {
+  getUserMatrix(
+    @Param('userId') userId: string
+  ): Promise<GetUserQueryReadModel> {
     return this.facade.getUserEisenhowerMatrix(
       new GetUserEisenhowerMatrixQuery(userId)
     );

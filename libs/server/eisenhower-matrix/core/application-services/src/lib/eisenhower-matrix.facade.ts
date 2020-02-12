@@ -13,6 +13,9 @@ export class EisenhowerMatrixFacade {
   getUserEisenhowerMatrix(
     query: GetUserEisenhowerMatrixQuery
   ): Promise<GetUserQueryReadModel> {
-    return this.queryBus.execute<GetUserEisenhowerMatrixQuery, GetUserQueryReadModel>(query);
+    return this.queryBus.execute<
+      GetUserEisenhowerMatrixQuery,
+      GetUserQueryReadModel
+    >(query);
   }
 }

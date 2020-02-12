@@ -26,6 +26,14 @@ So you probably won't find here a full-featured project, especially on the front
 I encourage you to focus on the workflow of each feature/use case from the application through the ui, shell, application services and domain.
 Also on the composition of the application by ports and adapters.
 
+## Independence of framework
+
+You can see a lot of duplicated classes from application-services layer inside the shell libraries like AddTaskHandlerImpl.
+It is an example of the implementation of the independence of framework.
+
+In many projects, it is an over-engineering and the application-service layer could have its own module to provide the facade, CQRS handlers and other services. It will make shell modules much simpler.
+You could also use @CommandHandler and other decorators from @nestjs.
+
 ## Sample dependency graph
 
 ![Dependency graph](docs/images/dep-graph.png)
