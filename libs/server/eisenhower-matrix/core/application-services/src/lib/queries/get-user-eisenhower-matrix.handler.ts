@@ -1,3 +1,4 @@
+import { GetUserQueryReadModel } from '@todo-app/server/eisenhower-matrix/core/application-services';
 import { EisenhowerMatrix } from '@todo-app/server/eisenhower-matrix/core/domain';
 import {
   ICommandHandler,
@@ -10,7 +11,7 @@ export class GetUserEisenhowerMatrixHandler
   constructor(private persistence: JsonFilesPersistence) {}
   async execute(
     command: GetUserEisenhowerMatrixQuery
-  ): Promise<EisenhowerMatrix> {
+  ): Promise<GetUserQueryReadModel> {
     const toDos = await this.persistence.getFileData<EisenhowerMatrix[]>();
     return toDos.find(
       (toDo: EisenhowerMatrix) => toDo.userId === command.userId

@@ -1,4 +1,4 @@
-import { EisenhowerMatrix } from '@todo-app/server/eisenhower-matrix/core/domain';
+import { GetUserQueryReadModel } from '@todo-app/server/eisenhower-matrix/core/application-services';
 import { CommandBus, QueryBus } from '@todo-app/server/shared/port';
 import { AddTaskCommand } from './commands/add-task.command/add-task.command';
 import { GetUserEisenhowerMatrixQuery } from './queries/get-user-eisenhower-matrix.query';
@@ -12,7 +12,7 @@ export class EisenhowerMatrixFacade {
 
   getUserEisenhowerMatrix(
     query: GetUserEisenhowerMatrixQuery
-  ): Promise<EisenhowerMatrix> {
-    return this.queryBus.execute(query);
+  ): Promise<GetUserQueryReadModel> {
+    return this.queryBus.execute<GetUserEisenhowerMatrixQuery, GetUserQueryReadModel>(query);
   }
 }
