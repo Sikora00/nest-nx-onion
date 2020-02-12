@@ -7,15 +7,19 @@ This project was generated using [Nx](https://nx.dev).
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
 ## Project description
+
 #### Main domain: Eisenhower Matrix
+
 A set of tasks that should be handled in a specific way.
- ![Eisenhower matrix image](https://todays200.files.wordpress.com/2019/10/eisenhower-matrix-complete.png?w=1024)
+![Eisenhower matrix image](https://todays200.files.wordpress.com/2019/10/eisenhower-matrix-complete.png?w=1024)
 
 ### The second one: Users
-A group of users that can be created and each one has its own matrix that can maintain. 
- 
+
+A group of users that can be created and each one has its own matrix that can maintain.
+
 ## Comments
-During the development of that project I had a vision of it described above, 
+
+During the development of that project I had a vision of it described above,
 but the main reason for building this repo was to provide an example of the Nest.js, Nx and Onion Architecture.
 So you probably won't find here a full-featured project, especially on the fronted side which is skipped for now.
 
@@ -23,10 +27,10 @@ I encourage you to focus on the workflow of each feature/use case from the appli
 Also on the composition of the application by ports and adapters.
 
 ## Sample dependency graph
+
 ![Dependency graph](docs/images/dep-graph.png)
 
-
-## Setup 
+## Setup
 
 Run `npm install` to install project dependencies
 

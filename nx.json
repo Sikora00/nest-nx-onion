@@ -12,119 +12,56 @@
   },
   "projects": {
     "api": {
-      "tags": [
-        "platform:server",
-        "type:application"
-      ]
+      "tags": ["platform:server", "type:application"]
     },
     "server-user-core-domain": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:domain"
-      ]
+      "tags": ["platform:server", "scope:user", "type:domain"]
     },
     "server-user-shell": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:shell"
-      ]
+      "tags": ["platform:server", "scope:user", "type:shell"]
     },
     "server-user-infrastructure": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:infrastructure"
-      ]
+      "tags": ["platform:server", "scope:user", "type:infrastructure"]
     },
     "todo-app": {
-      "tags": [
-        "platform:web",
-        "type:application"
-      ]
+      "tags": ["platform:web", "type:application"]
     },
     "todo-app-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "todo-app"
-      ]
+      "implicitDependencies": ["todo-app"]
     },
     "shared-util-array": {
-      "tags": [
-        "platform:any",
-        "scope:shared",
-        "type:util"
-      ]
+      "tags": ["platform:any", "scope:shared", "type:util"]
     },
     "server-shared-infrastructure": {
-      "tags": [
-        "platform:server",
-        "scope:shared",
-        "type:infrastructure"
-      ]
+      "tags": ["platform:server", "scope:shared", "type:infrastructure"]
     },
     "server-shared-port": {
-      "tags": [
-        "platform:server",
-        "scope:shared",
-        "type:port"
-      ]
+      "tags": ["platform:server", "scope:shared", "type:port"]
     },
     "cli": {
-      "tags": [
-        "platform:server",
-        "type:application"
-      ]
+      "tags": ["platform:server", "type:application"]
     },
     "shared-util-uuid": {
-      "tags": [
-        "platform:any",
-        "scope:shared",
-        "type:util"
-      ]
+      "tags": ["platform:any", "scope:shared", "type:util"]
     },
     "server-eisenhower-matrix-core-domain": {
-      "tags": [
-        "platform:server",
-        "scope:eisenhower-matrix",
-        "type:domain"
-      ]
+      "tags": ["platform:server", "scope:eisenhower-matrix", "type:domain"]
     },
     "server-eisenhower-matrix-shell": {
-      "tags": [
-        "platform:server",
-        "scope:eisenhower-matrix",
-        "type:shell"
-      ]
+      "tags": ["platform:server", "scope:eisenhower-matrix", "type:shell"]
     },
     "server-user-ui-rest": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:ui"
-      ]
+      "tags": ["platform:server", "scope:user", "type:ui"]
     },
     "server-user-ui-cli": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:ui"
-      ]
+      "tags": ["platform:server", "scope:user", "type:ui"]
     },
     "server-eisenhower-matrix-ui-rest": {
-      "tags": [
-        "platform:server",
-        "scope:eisenhower-matrix",
-        "type:ui"
-      ]
+      "tags": ["platform:server", "scope:eisenhower-matrix", "type:ui"]
     },
     "server-user-core-domain-services": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:domain-services"
-      ]
+      "tags": ["platform:server", "scope:user", "type:domain-services"]
     },
     "server-eisenhower-matrix-core-domain-services": {
       "tags": [
@@ -134,11 +71,7 @@
       ]
     },
     "server-user-core-application-services": {
-      "tags": [
-        "platform:server",
-        "scope:user",
-        "type:application-services"
-      ]
+      "tags": ["platform:server", "scope:user", "type:application-services"]
     },
     "server-eisenhower-matrix-core-application-services": {
       "tags": [

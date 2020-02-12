@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { EisenhowerMatrixFacade } from '@todo-app/server/eisenhower-matrix/core/application-services';
-import { CommandBusRootModule } from './cqrs/command/command-bus-root.module';
-import { eisenhowerMatrixFacadeFactory } from './providers/eisenhower-matrix-facade.factory';
-import { QueryBusRootModule } from './cqrs/query/query-bus-root.module';
 import { CommandBus, QueryBus } from '@todo-app/server/shared/port';
+import { CommandBusRootModule } from './cqrs/command/command-bus-root.module';
+import { QueryBusRootModule } from './cqrs/query/query-bus-root.module';
+import { eisenhowerMatrixFacadeFactory } from './providers/eisenhower-matrix-facade.factory';
 
 const PROVIDERS = [
   {

@@ -1,20 +1,11 @@
-import {
-  Body,
-  Controller,
-  Get,
-  HttpCode,
-  Param,
-  Post,
-  Req
-} from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import {
   AddTaskCommand,
-  GetUserEisenhowerMatrixQuery,
-  EisenhowerMatrixFacade
+  EisenhowerMatrixFacade,
+  GetUserEisenhowerMatrixQuery
 } from '@todo-app/server/eisenhower-matrix/core/application-services';
 import { EisenhowerMatrix } from '@todo-app/server/eisenhower-matrix/core/domain';
 import { AddTaskDto } from './dtos/add-task.dto';
-import { Request } from 'express';
 
 @Controller('eisenhower-matrix')
 export class EisenhowerMatrixController {

@@ -82,6 +82,7 @@
             "sourceTag": "type:application-services",
             "onlyDependOnLibsWithTags": [
               "type:domain",
+              "type:domain-services",
               "type:port",
               "type:util"
             ]
@@ -98,6 +99,7 @@
             "sourceTag": "type:infrastructure",
             "onlyDependOnLibsWithTags": [
               "type:domain",
+              "type:domain-services",
               "type:application-services",
               "type:port",
               "type:util"
@@ -107,6 +109,7 @@
             "sourceTag": "type:shell",
             "onlyDependOnLibsWithTags": [
               "type:domain",
+              "type:domain-services",
               "type:application-services",
               "type:infrastructure",
               "type:port"
@@ -116,6 +119,7 @@
             "sourceTag": "type:ui",
             "onlyDependOnLibsWithTags": [
               "type:domain",
+              "type:domain-services",
               "type:application-services",
               "type:shell"
             ]

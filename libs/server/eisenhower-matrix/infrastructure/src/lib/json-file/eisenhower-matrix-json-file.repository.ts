@@ -1,7 +1,5 @@
-import {
-  EisenhowerMatrix,
-  EisenhowerMatrixRepository
-} from '@todo-app/server/eisenhower-matrix/core/domain';
+import { EisenhowerMatrix } from '@todo-app/server/eisenhower-matrix/core/domain';
+import { EisenhowerMatrixRepository } from '@todo-app/server/eisenhower-matrix/core/domain-services';
 import { JsonFilesPersistence } from '@todo-app/server/shared/port';
 import { addOrReplace } from '@todo-app/shared/util-array';
 

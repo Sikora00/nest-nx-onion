@@ -1,7 +1,7 @@
 import { Type } from '@nestjs/common';
 import { IQueryHandler } from './query-handler.interface';
-import { IQuery } from './query.interface';
 import { IQueryResult } from './query-result.interface';
+import { IQuery } from './query.interface';
 
 export declare type QueryHandlerType = Type<
   IQueryHandler<IQuery, IQueryResult>

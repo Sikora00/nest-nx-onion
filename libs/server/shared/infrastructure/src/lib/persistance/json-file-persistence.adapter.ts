@@ -1,5 +1,5 @@
-import * as fs from 'fs';
 import { JsonFilesPersistence } from '@todo-app/server/shared/port';
+import * as fs from 'fs';
 
 export class JsonFilePersistenceAdapter implements JsonFilesPersistence {
   constructor(private filePath: string) {}
