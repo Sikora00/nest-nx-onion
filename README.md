@@ -1,3 +1,4 @@
+### If you are looking for an example of a real application that follows the rules described in [my article](https://medium.com/@maciejsikorski/onion-architecture-with-nest-js-and-nx-d9b5c7126b37) check out the [Pimp My Pr](https://github.com/valueadd-poland/pimp-my-pr)
 # ToDo App
 
 This project was generated using [Nx](https://nx.dev).
